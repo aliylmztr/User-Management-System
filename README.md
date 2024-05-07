@@ -66,3 +66,10 @@ Asp.NET Core Web App MVC (Model-View-Controller) ile MSSQL Server Bağlantısı 
 16. Browser(Google Chrome) >> "/Product/Index" Ekranı
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/bfd84a30-146d-47be-87a5-7cd829ded9b3)
+
+17. Browser(Google Chrome) >> "Logout" Butonuna Basılarak Çıkış Yapılması
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/3fba974a-2e40-4f0e-8089-8ae05fde56dd)
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/6d64debf-2362-435f-9bd5-3cebd9a981bf)
+
