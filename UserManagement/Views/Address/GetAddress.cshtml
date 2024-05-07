@@ -1,0 +1,41 @@
+@model UserManagement.Data.Models.Address
+
+@{
+    ViewData["Title"] = "GetAddress";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Update Address</h2>
+<br />
+@using (Html.BeginForm("UpdateAddress", "Address", FormMethod.Post))
+{
+    @Html.Label("Address Id:")
+    @Html.TextBoxFor(x => x.AddressId, new { @class = "form-control", @readonly = "readonly" });
+    <br />
+    @Html.Label("Name:")
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.Name, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("City:")
+    @Html.TextBoxFor(x => x.City, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.City, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("County:")
+    @Html.TextBoxFor(x => x.County, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.County, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Neighbourhood:")
+    @Html.TextBoxFor(x => x.Neighbourhood, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.Neighbourhood, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Long Address:")
+    @Html.TextAreaFor(x => x.LongAddress, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.LongAddress, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Username:")
+    @Html.DropDownListFor(x => x.UserId, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Update</button>
+}
+
+

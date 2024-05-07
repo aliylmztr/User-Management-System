@@ -1,0 +1,33 @@
+@model UserManagement.Data.Models.User
+
+@{
+    ViewData["Title"] = "AddUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create User</h2>
+<br />
+@using (Html.BeginForm("AddUser", "User", FormMethod.Post))
+{
+    @Html.Label("Username:")
+    @Html.TextBoxFor(x => x.Username, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.Username, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Name:")
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.Name, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Lastname:")
+    @Html.TextBoxFor(x => x.Lastname, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.Lastname, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("E-Mail:")
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" });
+    @Html.ValidationMessageFor(x => x.Email, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Password:")
+    @Html.TextBoxFor(x => x.Password, new { @class = "form-control", Type = "password" });
+    @Html.ValidationMessageFor(x => x.Password, "", new { @style = "color:red" })
+    <br />
+    <button class="btn btn-primary">Create</button>
+}

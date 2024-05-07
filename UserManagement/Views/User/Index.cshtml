@@ -1,0 +1,38 @@
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model IPagedList<UserManagement.Data.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User List</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>Name</th>
+        <th>Lastname</th>
+        <th>E-Mail</th>
+        <th>Password</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <th>@x.UserId</th>
+            <td>@x.Username</td>
+            <td>@x.Name</td>
+            <td>@x.Lastname</td>
+            <td>@x.Email</td>
+            <td>@x.Password</td>
+            <td>
+                <a href="/User/GetUser/@x.UserId" class="btn btn-success">Update</a>
+            </td>
+        </tr>
+    }
+</table>
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))
+<a href="/User/AddUser/" class="btn btn-primary">Add User</a>

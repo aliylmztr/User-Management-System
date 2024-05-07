@@ -1,0 +1,98 @@
+@model List<UserManagement.Data.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table id="productTable" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>VAT Rate</th>
+            <th>Discounted Amount</th>
+            <th>Amount</th>
+            <th>Inventory</th>
+            <th>Manufacturer Company Name</th>
+            <th>n11</th>
+            <th>ggidiyor</th>
+            <th>getir</th>
+            <th>trendyol Marketplace</th>
+            <th>pazarama Marketplace</th>
+            <th>hepsiburada</th>
+            <th>trendyol</th>
+            <th>amazon</th>
+            <th>eptt</th>
+            <th>Date of Update</th>
+            <th>Product Description</th>
+            <th>Images</th>
+            <th>Barcodes</th>
+            <th>Groups</th>
+            <th>Category</th>
+            <th>Display in E-commerce</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ID</td>
+                <td>@product.UrunKodu</td>
+                <td>@product.UrunAdi</td>
+                <td>@product.KDVOrani</td>
+                <td>@product.IndirimliTutar</td>
+                <td>@product.Tutar</td>
+                <td>@product.Envanter</td>
+                <td>@product.UreticiFirmaAdi</td>
+                <td>@product.n11</td>
+                <td>@product.ggidiyor</td>
+                <td>@product.getir</td>
+                <td>@product.trendyol_marketplace</td>
+                <td>@product.pazarama_marketplace</td>
+                <td>@product.hepsiburada</td>
+                <td>@product.trendyol</td>
+                <td>@product.amazon</td>
+                <td>@product.eptt</td>
+                <td>@product.GuncellemeTarihi</td>
+                <td>@Html.Raw(@product.UrunAciklamasi)</td>
+                <td>
+                    @foreach (var resim in product.Resimler)
+                    {
+                        <img src="@resim" alt="Resim" class="img-thumbnail" />
+                    }
+                </td>
+                <td>
+                    @foreach (var barkod in product.Barkodlar)
+                    {
+                        <div>
+                            Barkod: @barkod.Barkodu<br />
+                            Birim: @barkod.Birim<br />
+                            Fiyat: @barkod.Fiyat
+                        </div>
+                    }
+                </td>
+                <td>
+                    @foreach (var grup in product.Gruplar)
+                    {
+                        <div>@grup</div>
+                    }
+                </td>
+                <td>@product.Kategori</td>
+                <td>@product.EticaretteGoruntulensin</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
+
+    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#productTable').DataTable();
+        });
+    </script>
+}
