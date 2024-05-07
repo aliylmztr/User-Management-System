@@ -24,3 +24,22 @@ Asp.NET Core Web App MVC (Model-View-Controller) ile MSSQL Server Bağlantısı 
 6. Microsoft SQL Server >> "UserDB" Veritabanı "Admins" Tablosu => Edit
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/c7958f22-1492-4b18-a80b-2ab2a8b90d09)
+
+7. Browser(Google Chrome) >> "Login" Sayfası
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/f2099c41-53c4-47c5-973f-96b9fe83fb3d)
+
+8. Browser(Google Chrome) >> Doğru Kullanıcı Adı ve Şifresi ile Başarılı Giriş Yapılması
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/0c599143-449c-4d79-aa1a-7f22f895cda3)
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/58ea55c1-2ad3-4fd7-bd24-52fed5e4b2b2)
+
+9. Browser(Google Chrome) >> "/User/Index" Ekranı
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/23013400-c4d3-45bd-8670-f34794b829a6)
+
+10. Browser(Google Chrome) >> "Update User" Ekranı
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/b24e2bf3-26fc-4ee8-8cdc-c06aab507493)
+
