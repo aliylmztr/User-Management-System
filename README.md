@@ -35,7 +35,7 @@ Asp.NET Core Web App MVC (Model-View-Controller) ile MSSQL Server Bağlantısı 
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/58ea55c1-2ad3-4fd7-bd24-52fed5e4b2b2)
 
-9. Browser(Google Chrome) >> "/User/Index" Ekranı
+9. Browser(Google Chrome) >> "User List" Ekranı
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/23013400-c4d3-45bd-8670-f34794b829a6)
 
@@ -47,11 +47,11 @@ Asp.NET Core Web App MVC (Model-View-Controller) ile MSSQL Server Bağlantısı 
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/16262694-a1b3-46cd-b76a-63a694deecf9)
 
-12. Browser(Google Chrome) >> "/Address/Index" Ekranı 1.Sayfa
+12. Browser(Google Chrome) >> "Address List" Ekranı 1.Sayfa
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/b7069591-b639-4604-938e-14e2897d80fa)
 
-13. Browser(Google Chrome) >> "/Address/Index" Ekranı 2.Sayfa
+13. Browser(Google Chrome) >> "Address List" Ekranı 2.Sayfa
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/03da1a28-3ab0-46b9-a47d-ae973fdb5433)
 
@@ -63,7 +63,7 @@ Asp.NET Core Web App MVC (Model-View-Controller) ile MSSQL Server Bağlantısı 
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/1b036fca-6f3e-49b7-8ed3-220362f024de)
 
-16. Browser(Google Chrome) >> "/Product/Index" Ekranı
+16. Browser(Google Chrome) >> "Product List" Ekranı
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/bfd84a30-146d-47be-87a5-7cd829ded9b3)
 
