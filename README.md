@@ -59,4 +59,10 @@ Asp.NET Core Web App MVC (Model-View-Controller) ile MSSQL Server Bağlantısı 
 
 ![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/bb8ff882-ab16-4e05-a5c8-dda29b4a17dc)
 
+15. Browser(Google Chrome) >> "Create Address" Ekranı
 
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/1b036fca-6f3e-49b7-8ed3-220362f024de)
+
+16. Browser(Google Chrome) >> "/Product/Index" Ekranı
+
+![image](https://github.com/aliylmztr/User-Management-System/assets/123991935/bfd84a30-146d-47be-87a5-7cd829ded9b3)
